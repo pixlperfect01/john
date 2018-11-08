@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<style>
+		#heart {
+	position: relative;
+	width: 200px;
+	height: 180px;
+	animation: heartbeat 1.5s infinite;
+	margin:0 auto;
+}
+#heart:before,
+#heart:after {
+	position: absolute;
+	content: "";
+	left: 100px;
+	top: 0;
+	width: 100px;
+	height: 160px;
+	background:  #ff00d0;
+	-moz-border-radius: 100px 100px 0 0;
+	border-radius: 50px 50px 0 0;
+	-webkit-transform: rotate(-45deg);
+	   -moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		 -o-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	   -moz-transform-origin: 0 100%;
+		-ms-transform-origin: 0 100%;
+		 -o-transform-origin: 0 100%;
+			transform-origin: 0 100%;
+}
+#heart:after {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		 -o-transform: rotate(45deg);
+			transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+	   -moz-transform-origin: 100% 100%;
+		-ms-transform-origin: 100% 100%;
+		 -o-transform-origin: 100% 100%;
+			transform-origin :100% 100%;
+}
+@keyframes heartbeat
+{
+  0%
+  {
+	transform: scale( .75 );
+  }
+  20%
+  {
+	transform: scale( 1 );
+  }
+  40%
+  {
+	transform: scale( .75 );
+  }
+  60%
+  {
+	transform: scale( 1 );
+  }
+  80%
+  {
+	transform: scale( .75 );
+  }
+  100%
+  {
+	transform: scale( .75 );
+  }
+}
+.typo2{
+	font-size:4rem;
+	color:#FF00DD;
+	text-transform:uppercase;
+	text-shadow:1px 1px #d10e31,
+				2px 2px #d10e31,
+				3px 3px #d10e31,
+				4px 4px #d10e31,
+				5px 5px #d10e31,
+				6px 6px #890920,
+				7px 7px #890920,
+				8px 8px #890920,
+	   9px 9px 13px rgba(0,0,0,0.5);
+	 font-family:cookie;
+		}
+		.typo1{
+	font-size:3rem;
+	color:#00FF22;
+	text-transform:uppercase;
+	text-shadow:1px 1px #00D11C,
+				2px 2px #00D11C,
+				3px 3px #00D11C,
+				4px 4px #00D11C,
+				5px 5px #00D11C,
+				6px 6px #00AD1B,
+				7px 7px #00AD1B,
+				8px 8px #00AD1B,
+	   9px 9px 13px rgba(0,0,0,0.5);
+	 font-family:cookie;
+		}
+</style>
+</head>
+<body>
+<div align="center" class="as">
+            <div class="typo2">John +</div>
+	        <br></br>
+	        <div id="heart"></div>
+	        <div class="typo1">Linley</div>
+	</div>
